@@ -1,14 +1,19 @@
-## Put comments here that give an overall description of what your
-## functions do
+################
+## Remove before final commit
+## Ref: See Chapter 5 Page 118 Environments, Non-Local Assignments Closures
+################
 
-## Write a short comment describing this function
+## Overall description 
+
+## makeCacheMatrix Description
+
 
 makeCacheMatrix <- function(x = matrix()) {
 
 }
 
 
-## Write a short comment describing this function
+## cacheSolve Description
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
