@@ -1,11 +1,20 @@
-################
-## Remove before final commit
-## Ref: See Chapter 5 Page 118 Environments, Non-Local Assignments Closures
-################
 
-## Overall description 
+
+# Overall description
+        # Below are two functions that are used to compute  inverse of a square 
+        # matrix using the solve function in R. For example, if X is a square 
+        # invertible matrix, then solve(X) returns its inverse.
+        # Assume that the matrix supplied is always invertible.
+        
+        # This code mirrors rdpeng's makeVector and cachemean examples:
+        # https://github.com/rdpeng/ProgrammingAssignment2.git
+
+
+
 
 ## makeCacheMatrix Description
+        # This function creates a special "matrix" object that can cache its 
+        #inverse.
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -24,6 +33,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolve Description
+        #This function computes the inverse of the special "matrix" returned by 
+        #makeCacheMatrix above. 
+        # If the inverse has already been calculated (and the matrix has not changed), 
+        # then cacheSolve retrieves the inverse from the cache.          
 
 cacheSolve <- function(x=matrix(), ...) {
         m<-x$getmatrix()
@@ -37,5 +50,5 @@ cacheSolve <- function(x=matrix(), ...) {
         m
 }
 
-# Code alternative solution
+
 
